@@ -6,16 +6,17 @@ Implementing an ETL Pipeline Using Big Query and Airflow for Covid-19 Data
 ![architecture](results/system_architecture.jpg)
 
 ## **Data Sources**
-1. SQLite
+1. Kaggle
 2. Comma separated values (CSV)
 3. Excel (xls, xlsx)
 4. JSON
 
 ## **Tech Stacks**
 1. Python (v3.8.5)
-2. Airflow (v2.0.2)
+2. Apache Airflow (v2.5.0)
 3. Google Cloud Storage (GCS)
-4. BigQuery
+4. Google BigQuery
+5. Google Composer
 
 ## **Installation Setup**
 ### Setup Airflow
