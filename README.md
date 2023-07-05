@@ -6,7 +6,7 @@ Implementing an ETL Pipeline Using Big Query and Airflow for Covid-19 Data
 ETL from flat file data sources to Data Warehouse.
 
 ## **Architecture Overview**
-![architecture](Results and Screenshots/system architecture.jpg)
+[architecture](Results and Screenshots/system architecture.jpg)
 
 ## **Data Sources**
 1. SQLite
