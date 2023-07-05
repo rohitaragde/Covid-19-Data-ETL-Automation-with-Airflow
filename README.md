@@ -3,7 +3,6 @@ Implementing an ETL Pipeline Using Big Query and Airflow for Covid-19 Data
 
 
 ## **Architecture Overview**
-![architecture](Results and Screenshots/system%20architecture.jpg)
 ![architecture](images/system_architecture.jpg)
 
 ## **Data Sources**
