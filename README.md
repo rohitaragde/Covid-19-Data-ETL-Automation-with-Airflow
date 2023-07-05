@@ -1,13 +1,10 @@
-# ETL-Pipelining
+# ETL-Pipelining with Airflow, Google Cloud Storage and BigQuery
 Implementing an ETL Pipeline Using Big Query and Airflow for Covid-19 Data
 
 
-# ETL with Airflow, Google Cloud Storage and BigQuery
-ETL from flat file data sources to Data Warehouse.
-
 ## **Architecture Overview**
 ![architecture](Results and Screenshots/system%20architecture.jpg)
-![architecture](images/ETL%20with%20Airflow%20Architecture.png)
+![architecture](images/system_architecture.jpg)
 
 ## **Data Sources**
 1. SQLite
