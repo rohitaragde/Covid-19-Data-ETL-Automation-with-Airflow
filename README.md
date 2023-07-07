@@ -30,7 +30,7 @@ Step 02: - Once entered into google composer it will look something like this.
 
 Step 03: - Post that go to create environment and select Composer 2 with autoscaling option with airflow 2 which provides better performance.
 
-![Environment](results/step03.pmng)
+![Composer 2 and Airflow Setup](results/step03.png)
 
 Step 04: - Once entered into the creation phase select all the default values for everything and select the smaller environment size and then finally click on create environment.
 
