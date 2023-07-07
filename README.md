@@ -19,61 +19,36 @@ Implementing an ETL Pipeline Using Big Query and Airflow for Covid-19 Data
 5. Google Composer
 
 ## **Installation Setup**
-### Setup Airflow
-#### - **Native Airflow**
-This repo is using Native Airflow that is intended to get understanding on how to setup Airflow from scratch and for the sake of learning. Here is the steps to setup:
-1. **(Highly recommended)** Create virtual environment and activate it by running
-   ```bash
-   python -m venv venv 
-   source ./venv/bin/activate
-   ```
-2. Install `apache-airflow` with some libraries contraints that compatible with `AIRFLOW_VERSION` and `PYTHON_VERSION` to prevent any system break because of incompatibility
-   ```bash
-   AIRFLOW_VERSION=2.0.2
-   PYTHON_VERSION="$(python --version | cut -d " " -f 2 | cut -d "." -f 1-2)"
-   CONSTRAINT_URL="https://raw.githubusercontent.com/apache/airflow/constraints-${AIRFLOW_VERSION}/constraints-${PYTHON_VERSION}.txt"
-   pip install "apache-airflow==${AIRFLOW_VERSION}" --constraint "${CONSTRAINT_URL}"
-   ```
-3. Run `export AIRFLOW_HOME=$(pwd)` to set `AIRFLOW_HOME` variable to your current directory, but this is optional. The default value is `AIRFLOW_HOME=~/airflow` 
-4. Run `airflow db init` to initialize SQLite Database which stores Airflow metadata based on your `AIRFLOW_HOME` variable
-5. Create user account by running
-   ```bash
-   AIRFLOW_USERNAME=admin
-   AIRFLOW_FIRSTNAME=Data
-   AIRFLOW_LASTNAME=Engineer
-   AIRFLOW_EMAIL=dataengineer@company.org
+### Setup the Computing Environment
+Step 01: - Go and create a free account on Google Cloud Platform (GCP). Once logged in click on the console it will take you in and post that go to google Composer to setup the environment for the project
 
-   airflow users create \
-    --username "${AIRFLOW_USERNAME}" \
-    --firstname "${AIRFLOW_FIRSTNAME}" \
-    --lastname "${AIRFLOW_LASTNAME}" \
-    --role Admin \
-    --email "${AIRFLOW_EMAIL}"
-   ```
-   You will need to input your password when executing this command. And its your freedom to change the `USERNAME`, `FIRSTNAME` , `LASTNAME`, and `EMAIL` variable based your needs.
-   If you curious on checking this username on `airflow.db`, let me show it to you. 
-   
-   Here is the output:
-   ![username-sqlite](images/New%20user%20will%20be%20create%20on%20ab_user%20table.png) 
-   I'm using https://lana-k.github.io/sqliteviz/#/editor to display the SQLite data, dont be afraid as your SQLite file wont persist there.
-6. On same terminal, start the Airflow webserver with: 
-   ```bash
-   airflow webserver --port 8080
-   ```
-7. Open new terminal, run the scheduler to make your `dags` can do their tasks. Notice that you have to set the `AIRFLOW_HOME` variable again if you have set the variable before:
-   ```bash
-   export AIRFLOW_HOME=$(pwd)
-   airflow scheduler
-   ``` 
-8. Voila! Just open `http://localhost:8080/` on your browser to see the Airflow web
+![architecture](results/system_architecture.jpg)
 
-Shortly, you may run `install.sh` to perform the installation. Again, you can edit `install.sh` based on needs.
-More on: https://airflow.apache.org/docs/apache-airflow/stable/start/local.html
+Step 02: - Once entered into google composer it will look something like this.
 
-#### - **Alternative: Use Airflow Docker**
-But if you wish to use the Docker Airflow instead you can lookup to `docker-compose.yaml` file and refer to this tutorial: https://airflow.apache.org/docs/apache-airflow/stable/start/docker.html . 
+![architecture](results/system_architecture.jpg)
 
-If you need to install other dependecies other than what have been installed by the airflow docker image, please refer to this page: https://airflow.apache.org/docs/apache-airflow/1.10.13/production-deployment.html#extending-the-image
+Step 03: - Post that go to create environment and select Composer 2 with autoscaling option with airflow 2 which provides better performance.
+
+![architecture](results/system_architecture.jpg)
+
+Step 04: - Once entered into the creation phase select all the default values for everything and select the smaller environment size and then finally click on create environment.
+
+![architecture](results/system_architecture.jpg)
+
+Step 05: - Selecting the appropriate environment size
+
+![architecture](results/system_architecture.jpg)
+
+Step 06: - Selecting the appropriate network configuration and other defaults and finally create the environment. It takes a while for it to be created so we have to wait a bit but once it creates it has everything, the Airflow, The Webserver and the dag folders to execute the ETL pipeline. Please also find below the reference link for the installation steps:
+
+![architecture](results/system_architecture.jpg)
+
+Cloud Composer documentation. (n.d.). Google Cloud. 
+
+
+
+
 
 ### BigQuery Setup
 This project is used some of GCP services which is GCS and BigQuery, and we need to do some stuff on them.
