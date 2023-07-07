@@ -20,31 +20,33 @@ Implementing an ETL Pipeline Using Big Query and Airflow for Covid-19 Data
 
 ## **Installation Setup**
 ### Setup the Computing Environment
-Step 01: - Go and create a free account on Google Cloud Platform (GCP). Once logged in click on the console it will take you in and post that go to google Composer to setup the environment for the project
+**Step 01: - Go and create a free account on Google Cloud Platform (GCP). Once logged in click on the console it will take you in and post that go to google Composer to setup the environment for the project**
 
 ![GCP](results/step01.png)
 
-Step 02: - Once entered into google composer it will look something like this.
+**Step 02: - Once entered into google composer it will look something like this.**
 
 ![Google Composer](results/step02.png)
-
-Step 03: - Post that go to create environment and select Composer 2 with autoscaling option with airflow 2 which provides better performance.
+**
+Step 03: - Post that go to create environment and select Composer 2 with autoscaling option with airflow 2 which provides better performance.**
 
 ![Composer 2 and Airflow Setup](results/step03.png)
 
-Step 04: - Once entered into the creation phase select all the default values for everything and select the smaller environment size and then finally click on create environment.
+**Step 04: - Once entered into the creation phase select all the default values for everything and select the smaller environment size and then finally click on create environment.**
 
 ![Environment Configuration](results/step04.png)
-
-Step 05: - Selecting the appropriate environment size
+**
+Step 05: - Selecting the appropriate environment size**
 
 ![Environment Settings](results/step05.png)
-
-Step 06: - Selecting the appropriate network configuration and other defaults and finally create the environment. It takes a while for it to be created so we have to wait a bit but once it creates it has everything, the Airflow, The Webserver and the dag folders to execute the ETL pipeline. Please also find below the reference link for the installation steps:
+**
+Step 06: - Selecting the appropriate network configuration and other defaults and finally create the environment. It takes a while for it to be created so we have to wait a bit but once it creates it has everything, the Airflow, The Webserver and the dag folders to execute the ETL pipeline. Please also find below the reference link for the installation steps:**
 
 ![Final Setup](results/step06.png)
 
-Cloud Composer documentation. (n.d.). Google Cloud. 
+**Cloud Composer documentation. (n.d.). Google Cloud. **
+
+https://cloud.google.com/composer/docs
 
 
 
