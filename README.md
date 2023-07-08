@@ -1,5 +1,11 @@
-# ETL-Pipelining with Airflow, Google Cloud Storage and BigQuery
+**#Project Title:- ETL-Pipelining with Airflow, Google Cloud Storage and BigQuery**
 Implementing an ETL Pipeline Using Big Query and Airflow for Covid-19 Data
+
+## Team Members:-
+Rohit Annasaheb Ragde
+Shyamal Mishra
+Disha Yadav
+Rajabeeyegi Mehdi
 
 ## **Architecture Overview**
 ![architecture](results/system_architecture.jpg)
