@@ -105,10 +105,10 @@ https://cloud.google.com/composer/docs
        ![Prediction Schema](results/evaluation_model.png)
 
        - Predictions
-         ![Prediction Schema](results/final_prediction_report.png)
+         ![Prediction Schema](results/predictions_finalist.png)
 
          - Final Prediction Visualization Report
-           ![Prediction Schema](results/bucket.png)
+           ![Prediction Schema](results/final_prediction_report.png)
 
 
 
