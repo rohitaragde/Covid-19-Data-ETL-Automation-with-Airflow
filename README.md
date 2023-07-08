@@ -99,13 +99,13 @@ https://cloud.google.com/composer/docs
     ![Prediction Schema](results/etl_pipeline.png)
 
    - Training Model
-     ![Prediction Schema](results/bucket.png)
+     ![Prediction Schema](results/training_model.png)
 
      - Evaluation Model
-       ![Prediction Schema](results/bucket.png)
+       ![Prediction Schema](results/evaluation_model.png)
 
        - Predictions
-         ![Prediction Schema](results/predictions.png)
+         ![Prediction Schema](results/final_prediction_report.png)
 
          - Final Prediction Visualization Report
            ![Prediction Schema](results/bucket.png)
