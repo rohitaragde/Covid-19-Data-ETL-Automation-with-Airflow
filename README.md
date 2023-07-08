@@ -90,7 +90,7 @@ https://cloud.google.com/composer/docs
 
 **- Staging Table Output**
 
-  ![Prediction Schema](results/staging_output)
+  ![Prediction Schema](results/staging_table_finalist.png)
 
 **Preprocessed Table Output**
 
