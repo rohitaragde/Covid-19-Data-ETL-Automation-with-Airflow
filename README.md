@@ -105,7 +105,7 @@ https://cloud.google.com/composer/docs
        ![Prediction Schema](results/bucket.png)
 
        - Predictions
-         ![Prediction Schema](results/bucket.png)
+         ![Prediction Schema](results/predictions.png)
 
          - Final Prediction Visualization Report
            ![Prediction Schema](results/bucket.png)
