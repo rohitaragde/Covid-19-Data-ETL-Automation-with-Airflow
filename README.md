@@ -87,13 +87,13 @@ https://cloud.google.com/composer/docs
 ![Prediction Schema](results/prediction_schema.png)
 
 - Staging Table Output
-  ![Prediction Schema](results/bucket.png)
+  ![Prediction Schema](results/staging_output)
 
  -Preprocessed Table Output
- ![Prediction Schema](results/bucket.png)
+ ![Prediction Schema](results/preprocessed_output.png)
 
  - Processed Table Output
-   ![Prediction Schema](results/bucket.png)
+   ![Prediction Schema](results/processed_output.png)
 
   - ETL Pipeline
     ![Prediction Schema](results/bucket.png)
