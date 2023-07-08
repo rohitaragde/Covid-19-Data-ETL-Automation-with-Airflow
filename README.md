@@ -77,64 +77,7 @@ https://cloud.google.com/composer/docs
 4. Your bucket will be created and showed on GCS Browser
     ![Successful Bucket Creation](results/bucket.png)
 <br><br>
-### Service Account
-To recognized by Google Cloud Platform and interact with them. We have to set our service account.
-1. Go to GCP Console again, then navigate to **Products > IAM & Admin > Service Accounts**
-2. Click `CREATE SERVICE ACCOUNT` button
-3. Fill Service account details by filling `Service account name` and `Service account description` then click `CREATE` 
-   <br>Example:
-   ![fill-service-account](images/Fill%20Create%20Service%20Account.png)
-4. Click `DONE`
-5. Your service account can be seen on the main page
-   ![service-account](/images/Service%20accounts.png)
-6. As you can see this service account doesn't have key yet. Thus we need to create first. On **Action** column click the icon then choose **Manage keys**
-7. On Keys page, click `ADD KEY` and choose **Create new key**.
-8. Choose `JSON` as the key type then click `CREATE`
-9. The key will be automatically created & downloaded to your computer.
-  ![created-key](/images/Key%20created%20and%20downloaded%20to%20computer.png)
 
-**Notes**
-
-This `json` key will be needed when adding/editing Airflow Connections later. Thus please keep it safe.
-
-## Airflow Connections
-To connect our Airflow with external system, we need to setup connections on Airflow.
-1. On http://localhost:8080, go to **Admin > Connections**
-2. Add or Edit current Connection. Search for Google Cloud conn type
-3. Input fields needed there:
-   1. **Conn Id** (example: my_google_cloud_conn_id)
-   2. **Conn Type**: Google Cloud
-   3. **Description** (example: To interact with Google Cloud Platform such as upload data to GCS, load data from GCS to BigQuery, etc. )
-   4. **Keyfile Path**. This path is where your service account key is located. Refer to that path and fill this field with those file path.
-   5. **Keyfile JSON**. If you use Keyfile Path, leave this blank
-   6. **Number of Retries**. Default value is 5, but I set to 2.
-   7. **Project Id**. Set this value to your GCP Project Id.
-   8. **Scopes (comma separated)**. People on forum recommends to fill this with https://www.googleapis.com/auth/cloud-platform
-   9. Click `Save` button
-   10. Done! Everytime your Airflow connector needs `GCP conn_id`, just fill it with your **Conn Id**
-
-Example:
-![connections-airflow](images/Setup%20GCP%20Connections%20in%20Airflow.png)
-
-## Airflow Variables
-Airflow Variables is very important if you want to set global value which can accessed to your DAGs. Here's how to do it:
-1. On http://localhost:8080 go to **Admin > Variables**
-2. Click the **Plus (+)** icon. Or you can just Import Variables which is json file containing key value of variables.
-3. At very least, this projects must have this Variables:
-   1. **BASE_PATH**
-   2. **BUCKET_NAME**
-   3. **DATASET_ID**
-   4. **GOOGLE_CLOUD_CONN_ID**
-4. Done! Now your DAGs can access this variable by using:
-   ```python
-   from airflow.models.variable import Variable
-   
-   DATASET_ID = Variable.get("DATASET_ID")
-   ...
-   ```
-
-Example:
-![variables-airflow](images/Set%20Airflow%20Variable.png)
 
 ## Results
 - This is DAGs result of this project
