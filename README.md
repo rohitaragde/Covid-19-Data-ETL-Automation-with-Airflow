@@ -1,7 +1,6 @@
 # ETL-Pipelining with Airflow, Google Cloud Storage and BigQuery
 Implementing an ETL Pipeline Using Big Query and Airflow for Covid-19 Data
 
-
 ## **Architecture Overview**
 ![architecture](results/system_architecture.jpg)
 
@@ -80,45 +79,41 @@ https://cloud.google.com/composer/docs
 
 
 ## Results
-- This is Training Model Schema:-
+
+**- This is Training Model Schema:-**
+
  ![Training Model Schema](results/training_schema.png)
 
-- Prediction Schema:-
+**- Prediction Schema:-**
+
 ![Prediction Schema](results/prediction_schema.png)
 
-- Staging Table Output
+**- Staging Table Output**
+
   ![Prediction Schema](results/staging_output)
 
- -Preprocessed Table Output
+**Preprocessed Table Output**
+
  ![Prediction Schema](results/preprocessed_output.png)
 
- - Processed Table Output
+**Processed Table Output**
    ![Prediction Schema](results/processed_output.png)
 
-  - ETL Pipeline
-    ![Prediction Schema](results/etl_pipeline.png)
+**ETL Pipeline**
+  ![Prediction Schema](results/etl_pipeline.png)
 
-   - Training Model
-     ![Prediction Schema](results/training_model.png)
+**Training Model**
+![Prediction Schema](results/training_model.png)
 
-     - Evaluation Model
-       ![Prediction Schema](results/evaluation_model.png)
+**Evaluation Model**
+![Prediction Schema](results/evaluation_model.png)
 
-       - Predictions
-         ![Prediction Schema](results/predictions_finalist.png)
+**Predictions**
+![Prediction Schema](results/predictions_finalist.png)
 
-         - Final Prediction Visualization Report
-           ![Prediction Schema](results/final_prediction_report.png)
-
-
-
-- The result of loaded table in Data Warehouse which using BigQuery
-![loaded-table-bq](images/Final%20Result%20Data%20on%20BigQuery.png)
+**Final Prediction Visualization Report**
+![Prediction Schema](results/final_prediction_report.png)
 
 
 ## How to Use
-Everytime you want to run *Native Airflow* on your computer. Do this: 
-1. Activate your virtual environment by executing `source venv/bin/activate`
-2. Run `airflow webserver --port 8080 ` at your current terminal
-3. Run `airflow scheduler` on your other terminal.
-4. Go to http://localhost:8080 
+ 
