@@ -96,7 +96,7 @@ https://cloud.google.com/composer/docs
    ![Prediction Schema](results/processed_output.png)
 
   - ETL Pipeline
-    ![Prediction Schema](results/bucket.png)
+    ![Prediction Schema](results/etl_pipeline.png)
 
    - Training Model
      ![Prediction Schema](results/bucket.png)
