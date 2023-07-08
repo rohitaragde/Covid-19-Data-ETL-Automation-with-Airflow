@@ -80,11 +80,37 @@ https://cloud.google.com/composer/docs
 
 
 ## Results
-- This is DAGs result of this project
-![dags-airflow](images/List%20DAGS%20Airflow.png)
+- This is Training Model Schema:-
+ ![Training Model Schema](results/bucket.png)
 
-- Stored data on Google Cloud Storage
-![data-gcs](images/Final%20Result%20Data%20on%20GCS.png)
+- Prediction Schema:-
+![Prediction Schema](results/bucket.png)
+
+- Staging Table Output
+  ![Prediction Schema](results/bucket.png)
+
+ -Preprocessed Table Output
+ ![Prediction Schema](results/bucket.png)
+
+ - Processed Table Output
+   ![Prediction Schema](results/bucket.png)
+
+  - ETL Pipeline
+    ![Prediction Schema](results/bucket.png)
+
+   - Training Model
+     ![Prediction Schema](results/bucket.png)
+
+     - Evaluation Model
+       ![Prediction Schema](results/bucket.png)
+
+       - Predictions
+         ![Prediction Schema](results/bucket.png)
+
+         - Final Prediction Visualization Report
+           ![Prediction Schema](results/bucket.png)
+
+
 
 - The result of loaded table in Data Warehouse which using BigQuery
 ![loaded-table-bq](images/Final%20Result%20Data%20on%20BigQuery.png)
