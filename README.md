@@ -81,10 +81,10 @@ https://cloud.google.com/composer/docs
 
 ## Results
 - This is Training Model Schema:-
- ![Training Model Schema](results/bucket.png)
+ ![Training Model Schema](results/training_schema.png)
 
 - Prediction Schema:-
-![Prediction Schema](results/bucket.png)
+![Prediction Schema](results/prediction_schema.png)
 
 - Staging Table Output
   ![Prediction Schema](results/bucket.png)
