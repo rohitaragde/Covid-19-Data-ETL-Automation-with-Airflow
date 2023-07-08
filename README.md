@@ -53,13 +53,13 @@ https://cloud.google.com/composer/docs
 
 ### BigQuery Schema Snapshots
 
-1. Staging Schema:-
+**1. Staging Schema:-**
  ![Final Setup](results/staging.png)
 
-3. Preprocessed Table Schema:-
+**2. Preprocessed Table Schema:-**
  ![Final Setup](results/preprocessed_table.png)
 
-5. Processed Table Schema:-
+**3. Processed Table Schema:-**
  ![Final Setup](results/processed_table.png)
 
    
