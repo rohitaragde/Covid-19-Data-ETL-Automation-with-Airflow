@@ -54,12 +54,15 @@ https://cloud.google.com/composer/docs
 ### BigQuery Schema Snapshots
 
 **1. Staging Schema:-**
+
  ![Final Setup](results/staging.png)
 
 **2. Preprocessed Table Schema:-**
+
  ![Final Setup](results/preprocessed_table.png)
 
 **3. Processed Table Schema:-**
+
  ![Final Setup](results/processed_table.png)
 
    
@@ -68,19 +71,8 @@ https://cloud.google.com/composer/docs
 
 
 
-### BigQuery Setup
-This project is used some of GCP services which is GCS and BigQuery, and we need to do some stuff on them.
-1. On your GCP console, go to BigQuery. You can find it on **Big Data > BigQuery**
-2. Then create your Dataset ![create-dataset](/images/Create%20Dataset%20menu.png)
-3. Fill the Dataset field such as. In this project we only need to set:
-   - **Data set ID** (example: my_first_bigquery)
-   - **Data location**. Choose the nearest one from your location.
-  ![fill-dataset](/images/Create%20BigQuery%20Dataset.png)
-   
-4. Click `CREATE DATA SET`
-5. Ensure that your dataset has been created
-![ensure-dataset-created](/images/Ensure%20BQ%20Dataset%20created.png)
-<br><br>
+
+
 ### Google Cloud Storage Setup
 1. Back to your GCP console, choose Cloud Storage. You can find it on **Storage > Cloud Storage**
 2. Click `CREATE BUCKET` button. Then fill some fields such as:
