@@ -65,15 +65,7 @@ https://cloud.google.com/composer/docs
 
  ![Final Setup](results/processed_table.png)
 
-   
-
-
-
-
-
-
-
-### Google Cloud Storage Setup
+   ### Google Cloud Storage Setup
 1. Back to your GCP console, choose Cloud Storage. You can find it on **Storage > Cloud Storage**
 2. Click `CREATE BUCKET` button. Then fill some fields such as:
    - Name your bucket (example: blank-space-de-batch1)
@@ -83,7 +75,7 @@ https://cloud.google.com/composer/docs
    - Leave default for the rest of fields.
 3. Click `CREATE`
 4. Your bucket will be created and showed on GCS Browser
-   ![success-create-bucket](images/Success%20Create%20Bucket.png)
+    ![Successful Bucket Creation](results/bucket.png)
 <br><br>
 ### Service Account
 To recognized by Google Cloud Platform and interact with them. We have to set our service account.
