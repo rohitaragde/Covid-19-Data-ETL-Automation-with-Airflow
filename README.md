@@ -1,6 +1,6 @@
 **##Project Title:-**
 
-**ETL-Pipelining with Airflow, Google Cloud Storage and BigQuery****
+
 **Implementing an ETL Pipeline Using Big Query and Airflow for Covid-19 Data****
 
 ## Team Members:-
